@@ -21,7 +21,7 @@ export default async function initDemoEnv(): Promise<boolean> {
     console.group(chalk.underline(getLang(31)))
     console.log(chalk.green(getLang(28)))
     console.groupEnd()
-  } catch (err) {
+  } catch (err: any) {
     console.group(chalk.underline.red(getLang(29)))
     console.log(err.message)
     console.groupEnd()

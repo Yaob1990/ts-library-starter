@@ -50,7 +50,7 @@ export default async function initGit(
         resultMsg.push(gitInitOutput)
       }
     }
-  } catch (err) {
+  } catch (err: any) {
     errMsg.push(err.message)
   }
 
